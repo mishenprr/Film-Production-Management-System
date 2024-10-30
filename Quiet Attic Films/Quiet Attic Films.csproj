@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{523F28F5-837F-44BF-B29F-43C684EBFF39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quiet_Attic_Films</RootNamespace>
+    <AssemblyName>Quiet Attic Films</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCal.Designer.cs">
+      <DependentUpon>PaymentCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAFilmsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QAFilmsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QAFilmsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QAFilmsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffFrm.Designer.cs">
+      <DependentUpon>StaffFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffType.Designer.cs">
+      <DependentUpon>StaffType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Admin.Designer.cs">
+      <DependentUpon>User_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClientFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClientFrm.Designer.cs">
+      <DependentUpon>ViewClientFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocation.Designer.cs">
+      <DependentUpon>FrmLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduction.Designer.cs">
+      <DependentUpon>FrmProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProperty.Designer.cs">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAFilmsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QAFilmsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocationFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocationFrm.Designer.cs">
+      <DependentUpon>ViewLocationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProductionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProductionFrm.Designer.cs">
+      <DependentUpon>ViewProductionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPropertyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPropertyFrm.Designer.cs">
+      <DependentUpon>ViewPropertyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStaffFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStaffFrm.Designer.cs">
+      <DependentUpon>ViewStaffFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelForm.Designer.cs">
+      <DependentUpon>WelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocation.resx">
+      <DependentUpon>FrmLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduction.resx">
+      <DependentUpon>FrmProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProperty.resx">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCal.resx">
+      <DependentUpon>PaymentCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffFrm.resx">
+      <DependentUpon>StaffFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffType.resx">
+      <DependentUpon>StaffType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Admin.resx">
+      <DependentUpon>User_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewClientFrm.resx">
+      <DependentUpon>ViewClientFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocationFrm.resx">
+      <DependentUpon>ViewLocationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProductionFrm.resx">
+      <DependentUpon>ViewProductionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPropertyFrm.resx">
+      <DependentUpon>ViewPropertyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaffFrm.resx">
+      <DependentUpon>ViewStaffFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelForm.resx">
+      <DependentUpon>WelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QAFilmsDataSet.xsc">
+      <DependentUpon>QAFilmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QAFilmsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QAFilmsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QAFilmsDataSet.xss">
+      <DependentUpon>QAFilmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QAFilmsDataSet1.xsc">
+      <DependentUpon>QAFilmsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QAFilmsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QAFilmsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QAFilmsDataSet1.xss">
+      <DependentUpon>QAFilmsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QAFilmsDataSet2.xsc">
+      <DependentUpon>QAFilmsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QAFilmsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QAFilmsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QAFilmsDataSet2.xss">
+      <DependentUpon>QAFilmsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
